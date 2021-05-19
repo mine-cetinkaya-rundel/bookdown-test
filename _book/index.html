@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 1 Prerequisites | A Minimal Book Example</title>
+<title>Chapter 1 Packages used | A Minimal Book Example</title>
 <meta name="author" content="Yihui Xie">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.2"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.8/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -31,13 +31,9 @@
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
-<li><a class="active" href="index.html"><span class="header-section-number">1</span> Prerequisites</a></li>
+<li><a class="active" href="index.html"><span class="header-section-number">1</span> Packages used</a></li>
 <li><a class="" href="intro.html"><span class="header-section-number">2</span> Introduction</a></li>
 <li><a class="" href="literature.html"><span class="header-section-number">3</span> Literature</a></li>
-<li><a class="" href="methods.html"><span class="header-section-number">4</span> Methods</a></li>
-<li><a class="" href="applications.html"><span class="header-section-number">5</span> Applications</a></li>
-<li><a class="" href="final-words.html"><span class="header-section-number">6</span> Final Words</a></li>
-<li><a class="" href="references.html">References</a></li>
 </ul>
 
         <div class="book-extra">
@@ -45,18 +41,78 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><!--bookdown:title:end--><!--bookdown:title:start--><div id="prerequisites" class="section level1" number="1">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><!--bookdown:title:end--><!--bookdown:title:start--><div id="packages-used" class="section level1" number="1">
 <h1>
-<span class="header-section-number">1</span> Prerequisites<a class="anchor" aria-label="anchor" href="#prerequisites"><i class="fas fa-link"></i></a>
+<span class="header-section-number">1</span> Packages used<a class="anchor" aria-label="anchor" href="#packages-used"><i class="fas fa-link"></i></a>
 </h1>
-<p>This is a <em>sample</em> book written in <strong>Markdown</strong>. You can use anything that Pandoc’s Markdown supports, e.g., a math equation <span class="math inline">\(a^2 + b^2 = c^2\)</span>.</p>
-<p>The <strong>bookdown</strong> package can be installed from CRAN or Github:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"bookdown"</span><span class="op">)</span>
-<span class="co"># or the development version</span>
-<span class="co"># devtools::install_github("rstudio/bookdown")</span></code></pre></div>
-<p>Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading <code>#</code>.</p>
-<p>To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <a href="https://yihui.org/tinytex/" class="uri">https://yihui.org/tinytex/</a>.</p>
+<code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/sessioninfo/man/session_info.html">session_info</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<pre><code>## ─ Session info ───────────────────────────────────────────────────────────────
+##  setting  value                       
+##  version  R version 4.0.5 (2021-03-31)
+##  os       macOS Big Sur 10.16         
+##  system   x86_64, darwin17.0          
+##  ui       X11                         
+##  language (EN)                        
+##  collate  en_GB.UTF-8                 
+##  ctype    en_GB.UTF-8                 
+##  tz       Europe/London               
+##  date     2021-05-19                  
+## 
+## ─ Packages ───────────────────────────────────────────────────────────────────
+##  package     * version    date       lib source                            
+##  bookdown      0.22       2021-04-22 [1] CRAN (R 4.0.2)                    
+##  bslib         0.2.5.1    2021-05-18 [1] CRAN (R 4.0.5)                    
+##  cachem        1.0.4      2021-02-13 [1] CRAN (R 4.0.2)                    
+##  callr         3.7.0      2021-04-20 [1] CRAN (R 4.0.2)                    
+##  cli           2.5.0      2021-04-26 [1] CRAN (R 4.0.5)                    
+##  crayon        1.4.1      2021-02-08 [1] CRAN (R 4.0.2)                    
+##  desc          1.3.0      2021-03-05 [1] CRAN (R 4.0.2)                    
+##  devtools      2.4.0      2021-04-07 [1] CRAN (R 4.0.2)                    
+##  digest        0.6.27     2020-10-24 [1] CRAN (R 4.0.2)                    
+##  downlit       0.2.1.9000 2021-04-19 [1] Github (r-lib/downlit@9376900)    
+##  ellipsis      0.3.2      2021-04-29 [1] CRAN (R 4.0.2)                    
+##  evaluate      0.14       2019-05-28 [1] CRAN (R 4.0.1)                    
+##  fansi         0.4.2      2021-01-15 [1] CRAN (R 4.0.2)                    
+##  fastmap       1.1.0      2021-01-25 [1] CRAN (R 4.0.2)                    
+##  fs            1.5.0      2020-07-31 [1] CRAN (R 4.0.2)                    
+##  glue          1.4.2      2020-08-27 [1] CRAN (R 4.0.2)                    
+##  htmltools     0.5.1.1    2021-01-22 [1] CRAN (R 4.0.2)                    
+##  jquerylib     0.1.4      2021-04-26 [1] CRAN (R 4.0.2)                    
+##  jsonlite      1.7.2      2020-12-09 [1] CRAN (R 4.0.2)                    
+##  knitr         1.33       2021-04-24 [1] CRAN (R 4.0.5)                    
+##  lifecycle     1.0.0      2021-02-15 [1] CRAN (R 4.0.2)                    
+##  magrittr      2.0.1      2020-11-17 [1] CRAN (R 4.0.2)                    
+##  memoise       2.0.0      2021-01-26 [1] CRAN (R 4.0.2)                    
+##  pillar        1.6.1      2021-05-16 [1] CRAN (R 4.0.5)                    
+##  pkgbuild      1.2.0      2020-12-15 [1] CRAN (R 4.0.2)                    
+##  pkgconfig     2.0.3      2019-09-22 [1] CRAN (R 4.0.2)                    
+##  pkgload       1.2.1      2021-04-06 [1] CRAN (R 4.0.2)                    
+##  prettyunits   1.1.1      2020-01-24 [1] CRAN (R 4.0.2)                    
+##  processx      3.5.2      2021-04-30 [1] CRAN (R 4.0.5)                    
+##  ps            1.6.0      2021-02-28 [1] CRAN (R 4.0.2)                    
+##  purrr         0.3.4      2020-04-17 [1] CRAN (R 4.0.2)                    
+##  R6            2.5.0      2020-10-28 [1] CRAN (R 4.0.2)                    
+##  remotes       2.3.0      2021-04-01 [1] CRAN (R 4.0.2)                    
+##  rlang         0.4.11     2021-04-30 [1] CRAN (R 4.0.5)                    
+##  rmarkdown     2.8        2021-05-07 [1] CRAN (R 4.0.2)                    
+##  rprojroot     2.0.2      2020-11-15 [1] CRAN (R 4.0.2)                    
+##  rstudioapi    0.13       2020-11-12 [1] CRAN (R 4.0.2)                    
+##  sass          0.4.0      2021-05-12 [1] CRAN (R 4.0.2)                    
+##  sessioninfo   1.1.1      2018-11-05 [1] CRAN (R 4.0.2)                    
+##  stringi       1.6.2      2021-05-17 [1] CRAN (R 4.0.5)                    
+##  stringr       1.4.0.9000 2021-05-18 [1] Github (tidyverse/stringr@f030ae0)
+##  testthat      3.0.2      2021-02-14 [1] CRAN (R 4.0.2)                    
+##  tibble        3.1.2      2021-05-16 [1] CRAN (R 4.0.5)                    
+##  usethis       2.0.1      2021-02-10 [1] CRAN (R 4.0.2)                    
+##  utf8          1.2.1      2021-03-12 [1] CRAN (R 4.0.2)                    
+##  vctrs         0.3.8      2021-04-29 [1] CRAN (R 4.0.2)                    
+##  withr         2.4.2      2021-04-18 [1] CRAN (R 4.0.5)                    
+##  xfun          0.23       2021-05-15 [1] CRAN (R 4.0.2)                    
+##  xml2          1.3.2      2020-04-23 [1] CRAN (R 4.0.2)                    
+##  yaml          2.2.1      2020-02-01 [1] CRAN (R 4.0.2)                    
+## 
+## [1] /Library/Frameworks/R.framework/Versions/4.0/Resources/library</code></pre>
 
 </div>
   <div class="chapter-nav">
@@ -64,7 +120,7 @@
 <div class="next"><a href="intro.html"><span class="header-section-number">2</span> Introduction</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#prerequisites"><span class="header-section-number">1</span> Prerequisites</a></li></ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#packages-used"><span class="header-section-number">1</span> Packages used</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
@@ -88,18 +144,6 @@
   </div>
 
 </div></div>
-</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
+</footer>
 </body>
 </html>
