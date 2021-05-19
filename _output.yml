@@ -1,4 +1,5 @@
 bookdown::bs4_book:
   css: style.css
+  repo: https://github.com/mine-cetinkaya-rundel/bookdown-test
   theme:
     primary: "#569BBD"
